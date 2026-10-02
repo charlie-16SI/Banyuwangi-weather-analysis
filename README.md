@@ -14,10 +14,9 @@ Proyek ini bertujuan untuk melakukan pembersihan data (*data cleaning*), penanga
 3. **Feature Engineering**: Ekstraksi komponen tanggal menjadi elemen tahun, bulan, dan hari untuk analisis musiman.
 4. **Analisis Korelasi & EDA**: Mengukur hubungan antarvariabel cuaca seperti suhu rata-rata (`TAVG`), kelembapan (`RH_avg`), dan curah hujan (`RR`).
 
-## 🔑 Temuan Utama (Insights)
-- *(Tuliskan 2-3 poin temuan paling menarik dari analisis Anda, misalnya tren kenaikan suhu harian atau bulan dengan curah hujan tertinggi)*.
+## 🔑 Temuan Utama (Key Insights)
 
-## 🚀 Cara Menjalankan Notebook
-1. Clone repositori ini:
-   ```bash
-   git clone [https://github.com/username-anda/bmkg-weather-analysis.git](https://github.com/username-anda/bmkg-weather-analysis.git)
+- 🌧️ **Pola Curah Hujan Musiman**: Puncak curah hujan tertinggi di Banyuwangi terjadi pada bulan **[misal: Desember – Februari]** dengan rata-rata **[misal: XX mm/hari]**, sedangkan periode terkering terjadi pada bulan **[misal: Agustus – September]**.
+- 🌡️ **Korelasi Suhu & Kelembapan**: Terdapat korelasi negatif yang kuat ($r = \mathbf{-0.XX}$) antara Suhu Rata-rata (`TAVG`) dan Kelembapan Udara (`RH_avg`), di mana lonjakan suhu harian selalu diikuti dengan penurunan kelembapan udara secara signifikan.
+- 📉 **Kualitas Data & Cleansing**: Berhasil membersihkan dan mengimputasi **[misal: X%]** data hilang yang menggunakan kode *placeholder* BMKG (`8888`, `9999`, `-`) sehingga distribusi data deret waktu (2010–2024) kembali konsisten.
+- ☀️️ **Tren Suhu Ekstrem**: Fluktuasi suhu maksimum harian (`TX`) tercatat mencapai titik tertinggi sebesar **[misal: 35.2°C]** pada bulan **[misal: Oktober]**.
